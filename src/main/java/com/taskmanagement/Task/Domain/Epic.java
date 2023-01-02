@@ -30,9 +30,18 @@ public class Epic {
     @OneToMany(mappedBy = "epic")
     private List<Tasks> tasks;
 
+    @OneToMany(mappedBy = "epic")
+    private List<Upgrade> upgrade;
+
     @Column(name = "priority")
     private String priority;
 
     @Column(name = "modificationdate")
     private LocalDate modificationDate;
+
+    @Column(name = "statut")
+    private Statut statut;
+    public enum Statut {
+        Ready,PROGRESS,FINISHED
+    }
 }

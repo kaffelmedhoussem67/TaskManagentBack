@@ -6,7 +6,9 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "upgrade")
-public class Upgrade extends Epic{
+public class Upgrade {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

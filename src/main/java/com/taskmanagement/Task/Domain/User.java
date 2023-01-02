@@ -46,6 +46,7 @@ public class User {
     @Column(name = "role")
     private  Role role;
 
+
     public enum Role {
         ADMIN,USER
     }
