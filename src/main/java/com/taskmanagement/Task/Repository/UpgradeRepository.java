@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface UpgradeRepository extends JpaRepository<Long, Upgrade> {
+public interface UpgradeRepository extends JpaRepository<Upgrade, Long> {
 }
